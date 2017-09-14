@@ -29,11 +29,6 @@ def main(argv):
 		print('Incorrect Syntax')
 		return
 
-	# opening log file for bookkeeping
-	logfile = open('../Logs/'+datetime.now().strftime('%Y-%m-%d_%H%M')+'.log', 'w')
-	logfile.write(str(argv) + '\n')
-
-	# assigning meaningful names to the command line arguments
 	search_query = argv[0]
 	search_location = argv[1]
 	search_year = argv[2]
