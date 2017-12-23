@@ -29,7 +29,7 @@ def main(argv):
 
 	# opening the files
 	geo_locations = open(location_file_path, 'r')
-	output_file = codecs.open(output_file_path, 'a', 'utf-16')
+	output_file = codecs.open(output_file_path, 'a', 'utf-8')
 
 	# creating a parser for the csv file
 	reader = csv.DictReader(geo_locations)
